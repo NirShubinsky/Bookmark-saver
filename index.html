@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookmark App</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,31 +12,33 @@
     <!-- open modal -->
     <h1 id="show-modal">Add Bookmark</h1>
     <!-- Bookmarks -->
-    <div class="container" id="bookmarks-container">
-        <div class="item">
-            <i class="fas fa-solid fa-minus" id="delete-bookmark" title="Delete Bookmark"></i>
-            <div class="name">
-                <img src="" alt="">
-                <a href="https://nirshubinsky.github.io/countdown/" target="_blank">website</a>
+    <div class="container" id="bookmarks-container"></div>
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <i class="fas fa-regular fa-minus" id="close-modal"></i>
+            <div class="modal-header">
+                <h3>Add Bookmark</h3>
             </div>
-        </div>
-        <div class="item">
-            <i class="fas fa-solid fa-minus" id="delete-bookmark" title="Delete Bookmark"></i>
-            <div class="name">
-                <img src="" alt="">
-                <a href="https://nirshubinsky.github.io/MusicPlayer/" target="_blank">website</a>
-            </div>
-        </div>
-        <div class="item">
-            <i class="fas fa-solid fa-minus" id="delete-bookmark" title="Delete Bookmark"></i>
-            <div class="name">
-                <img src="" alt="">
-                <a href="https://nirshubinsky.github.io/TextToVoiceApi/" target="_blank">website</a>
+            <div class="modal-content">
+                <form id="bookmark-form">
+                    <!-- Website Name -->
+                    <div class="form-group">
+                        <label for="website-name" class="form-label">Website Name</label>
+                        <input type="text" class="form-input" id="website-name">
+                    </div>
+                    <!-- Website URL -->
+                    <div class="form-group">
+                        <label for="website-url" class="form-label">Website URL</label>
+                        <input type="text" class="form-input" id="website-url">
+                    </div>
+                    <button type="submit">Save</button>
+                </form>
             </div>
         </div>
     </div>
     <!-- Credits -->
-    <!-- <p class="credits">Created & Developed by Nir Shubinsky <a href="https://github.com/NirShubinsky" target="_blank" title="GitHub"><i class="fab fa-github">&nbsp;</i></a><a href="https://www.linkedin.com/in/nir-shubinsky-b7a176b1/" target="_blank" title="Linkedln"><i class="fab fa-linkedin"></i></a></p> -->
+    <p class="credits">Created & Developed by Nir Shubinsky<a href="https://github.com/NirShubinsky" target="_blank" title="GitHub"><i class="fab fa-github">&nbsp;</i></a><a href="https://www.linkedin.com/in/nir-shubinsky-b7a176b1/" target="_blank" title="Linkedln"><i class="fab fa-linkedin"></i></a></p>
     <!-- Script -->
     <script src="script.js"></script>
 </body>
